@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #e0e7ff, #fdf2f8);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+#one #password{
+    width: 320px;
+    height: 50px;
+    border: 1px solid #c7d2fe;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+#two{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #334155;
+    font-weight: 500;
+}
+
+#length{
+    width: 200px;
+    accent-color: #6366f1;
+}
+
+#lengthValue{
+    font-size: 1.1rem;
+    min-width: 25px;
+    text-align: center;
+    color: #4f46e5;
+}
+
+#generate{
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+#generate:hover{
+    background: #ffffff;
+    color: #4f46e5;
+    border: 2px solid #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79,70,229,0.4);
+}
+
+
+#generate:active{
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px){
+    #block{
+        width: 90%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    #one #password{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #length{
+        width: 160px;
+    }
+
+    #generate{
+        width: 100%;
+        max-width: 250px;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px){
+   
+
+    #block{
+        border-radius: 1rem;
+    }
+
+    #one #password{
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    #two{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #length{
+        width: 100%;
+    }
+
+    #generate{
+        height: 45px;
+        width: auto;
+        padding: 0.5rem;
+        font-size: 0.65rem;
+    }
+}
+
